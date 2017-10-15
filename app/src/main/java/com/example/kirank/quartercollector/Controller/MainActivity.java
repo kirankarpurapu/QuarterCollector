@@ -45,9 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-//        CoinSource.getCoins().forEach(coin -> System.out.println(coin.getNameOfCoin() + ", " + coin.getId()));
-
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.content_main);
