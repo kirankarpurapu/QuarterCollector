@@ -51,7 +51,7 @@ public class CoinSource {
 
     public static boolean isNamePresent(final String newCoinNameString) {
 
-        return coins.stream().map(Coin::getNameOfCoin).anyMatch(name -> name.equals(newCoinNameString));
+        return coins.stream().map(Coin::getNameOfCoin).anyMatch(name -> name.toLowerCase().equals(newCoinNameString.toLowerCase()));
     }
 
     public static void setAllCoinsAsUnselected() {

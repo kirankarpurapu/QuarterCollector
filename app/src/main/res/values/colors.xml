@@ -4,6 +4,6 @@
     <color name="colorPrimaryDark">#154a4a</color>
     <color name="colorAccent">#404a4a</color>
     <color name="white">#FFFFFF</color>
-    <color name="coinCardBackground">#acfed1</color>
-    <color name="selected">#60000000</color>
+    <color name="coinCardBackground">#ddeeee</color>
+    <color name="selected">#70000000</color>
 </resources>
