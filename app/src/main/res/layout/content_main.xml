@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/background"
     android:id="@+id/main_coordinator_layout"
-    tools:context="com.example.kirank.quartercollector.MainActivity">
+    tools:context="com.example.kirank.quartercollector.Controller.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

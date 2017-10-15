@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#303F9F</color>
+    <color name="colorPrimary">#264a4a</color>
+    <color name="colorPrimaryDark">#154a4a</color>
+    <color name="colorAccent">#404a4a</color>
     <color name="white">#FFFFFF</color>
-    <color name="selected">#50000000</color>
+    <color name="coinCardBackground">#acfed1</color>
+    <color name="selected">#60000000</color>
 </resources>
