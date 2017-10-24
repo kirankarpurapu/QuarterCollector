@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     private void longClickedOnCoinAt(final long coinId, final View longClickedOn) {
 
         if (searchView.getQuery().toString().length() != 0) {
-            //show the popup menu here
+            //show the single delete popup menu here
             final PopupMenu deletePopupMenu = new PopupMenu(MainActivity.this, longClickedOn);
             deletePopupMenu.getMenuInflater().inflate(R.menu.popup_menu, deletePopupMenu.getMenu());
 
@@ -95,18 +95,19 @@ public class MainActivity extends AppCompatActivity {
             deletePopupMenu.show();
 
         } else {
-            //modify coin view
+            //modify coin view and toolbar
             final boolean isSelected = CoinSource.getCoinWithId(coinId).isSelected();
             if (!isSelected) {
+                //if the coin is not selected previously
                 CoinSource.setCoinWithIdAsSelected(coinId);
                 //notify dataset changed
                 this.mainActivityAdapter.notifyDataSetChanged();
-            }
 
-            //modify menu
-            this.someCoinsSelected = true;
-            this.idsOfSelectedCoins.add(coinId);
-            invalidateOptionsMenu();
+                //modify menu
+                this.someCoinsSelected = true;
+                this.idsOfSelectedCoins.add(coinId);
+                invalidateOptionsMenu();
+            }
         }
     }
 
